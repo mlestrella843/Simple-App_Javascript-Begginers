@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Temperature</title>  
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/temp.css">
+
+<div>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="mark_grade.html">Mark Grade</a></li>
+            <li><a href="staff_list.html">List staff</a></li>
+            <li><a href="temperature_convert.html">Temperature</a></li>
+        </ul>
+    </nav>
+    
+</div>
+
+
+
+</head>
+<body>
+
+    <header class="header_about">
+        <div>
+            <h2>Enter the temperature in Fahrenheit to Convert</h2>
+        </div>
+
+    </header>
+
+    <section> 
+        
+       
+
+            <div class="div1">
+                <h4>1. Enter the temperatura in Farenheit</h4>
+                <h4>2. First click on the button, will convert Fahrenheit to Celcius</h4>
+                <h4>3. Second click on the button, will convert Celsius to Farenheit </h4>
+            </div>
+
+            <div class="div2">
+
+            <p>
+                <input type="number" id="number" placeholder="Enter temperature in Fah">
+            </p>
+        
+        </div>
+
+        <div class="div3">             
+            <p> 
+                <input type="button" id="btn1" value="Click Me!">
+            </p>
+            <p id="p-celsius"> </p>
+            <p id="p-kelvin"></p>
+        </div>
+
+
+    </section>
+
+    <script src="../js/temperature.js"></script>
+    <script src="../js/index.js"></script> 
+    
+</body>
+
+<footer>
+    <p><h3>Page developed by Maria Estrella for SODV1201</h3></p>
+    <p><h4>Assigment 1</h4></p>
+    <p><h4>Dima Marachi</h4></p>
+    <div class="timing">
+        <p>Current Data: </p>
+        <p id="demo"></p>
+    </div>
+</footer>
+</html>

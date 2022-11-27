@@ -1,0 +1,14 @@
+
+
+
+  table{
+    width: 100px;
+    padding: 50px;
+    border: solid 2px violet;
+}
+
+table td{
+  
+    padding: 20px;
+    border: solid 2px violet;
+}

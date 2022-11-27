@@ -1,0 +1,15 @@
+.section-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background-color: white;
+    float: left;
+    width: 50%;   
+}
+
+.section-2{
+    padding: 30px;
+    background-color: white;
+    float: right;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

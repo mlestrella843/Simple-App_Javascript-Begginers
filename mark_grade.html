@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=100, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@300&family=Poppins:wght@200&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Condensed&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Validate and Mark</title>
+    <link rel="stylesheet" href="../css/style.css">   
+    <link rel="stylesheet" href="../css/style_grades.css">
+    <link rel="stylesheet" href="../css/style_staff.css">
+    <script src="../js/index.js"></script>
+
+    <div>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="mark_grade.html">Mark Grade</a></li>
+                <li><a href="staff_list.html">List staff</a></li>
+                <li><a href="temperature_convert.html">Temperature</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+
+
+
+</head>
+<body>
+
+    <header class="header_about">
+        <div id="mark_to_grade"><h1>Mark To Grade</h1></div> 
+    </header>     
+
+   <main>
+
+
+    <section> 
+        <div class="section-1">
+            <h3>Please enter the Value</h3>
+            <input id="n1">
+            <button onclick="doValidate('n1')">Grade!</button>
+        </div>
+
+        <div class="section-2">
+            <h3>Your grade is:</h3>
+            <p id="grade"></p>
+        </div>
+    </section>
+
+  
+        <script>
+
+            "Use strict"
+
+            function doValidate(number){
+                const n1 = parseFloat(document.getElementById('n1').value);
+                let grade;
+                
+                //Validacion 
+
+                if(isNaN(n1)){
+                    alert("You are entered a char, Please enter a number from 0 to 100");
+                }
+                else if(n1<0){
+                    alert("The numer entered is negative, Please enter a number from 0 to 100");
+                }
+                else if(n1>100){
+                    alert("The numer entered is greater than 100, please enter a number from 0 to 100");
+                }
+                else if(n1 >= 90){
+                    document.getElementById("grade").innerHTML = ("Your grade is: A ");
+                }
+                else if(n1 >= 80){
+                    document.getElementById("grade").innerHTML = ("Your grade is: B "); 
+                }
+                else if(n1 >= 70){
+                    document.getElementById("grade").innerHTML = ("Your grade is: C ");
+                }
+                else if(n1 >= 50){
+                    document.getElementById("grade").innerHTML = ("Your grade is: D ");
+                }
+                else if(n1 < 50){
+                    document.getElementById("grade").innerHTML = ("Your grade is: F ");
+                }
+            }
+        </script>
+   </main>
+
+
+   <script src="../js/index.js"></script>
+</body>
+
+<footer>
+    <p><h4>Page developed by Maria Estrella to TECH1101</h4></p>
+    <p><h4>Assigment 1</h4></p>
+    <p><h4>Dima Marachi</h4></p>
+    <div class="timing">
+        <p>Current Data: </p>
+        <p id="demo"></p>
+    </div>
+</footer>
+
+</html>
